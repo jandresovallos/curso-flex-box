@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #contenedor{
+        display: flex;
+        display: -webkit-flex;
+        width: 400px;
+        height: 250px;
+        background: gray;
+        /* Equivalentes de derecha a izquierda*/
+        direction: rtl; /* Es lo pega a la izquierda*/
+        flex-direction: row-reverse;
+
+        /* Equivalentes de derecha a izquierda*/
+        direction: ltr;
+        flex-direction: row;
+
+    }
+    .item{
+        background: orange;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+</style>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+</body>
+</html>

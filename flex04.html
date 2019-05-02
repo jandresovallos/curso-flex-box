@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #contenedor{
+        display: flex;
+        display: -webkit-flex;
+        width: 400px;
+        height: 250px;
+        background: gray;
+
+        /*stretch: Estira los items (hay que omitir la altura o height)
+        hay que quitar la propiedad height de los items*/
+        -webkit-align-items: stretch;
+        align-items: stretch;
+
+        /*flex-start: Son colocados al inicio del contenedor*/
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+
+        /*flex-end: Son colocados al final del contenedor*/
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+
+        /*center: Son colocados al centro del eje secundario del contenedor*/
+        -webkit-align-items: center;
+        align-items: center;
+
+        /*baseline: Son colocados en la parte superior del contenedor*/
+        -webkit-align-items: baseline;
+        align-items: baseline;
+        
+
+
+    }
+    .item{
+        background: orange;
+        min-width: 100px;
+        min-height: 100px;
+        margin: 10px;
+    }
+</style>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+</body>
+</html>

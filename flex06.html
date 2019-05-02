@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #contenedor{
+        display: flex;
+        display: -webkit-flex;
+        width: 300px;
+        height: 300px;
+        background: gray;
+        flex-wrap: wrap;
+        /*STRETCH: Es el valor por omisión*/
+        align-content: stretch;
+
+        /*flex-start =  pega los items a la parte superior de cada fila*/
+        align-content: flex-start;
+
+        /*flex-end = pega los items a la parte inferior de cada fila*/
+        align-content: flex-end;
+
+        /*flex-center = Centra los items al centro del contenedor  */
+        align-content: center;
+
+        /*space-between =  ajusta los items a los extremos verticales de las filas */
+        align-content: space-between;
+
+        /*space-around =  ajusta los items de manera uniforme */
+        align-content: space-around;
+        
+    }
+    .item{
+        background: orange;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+</style>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+</body>
+</html>

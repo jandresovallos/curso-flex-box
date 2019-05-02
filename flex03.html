@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #contenedor{
+        display: flex;
+        display: -webkit-flex;
+        width: 400px;
+        height: 250px;
+        background: gray;
+        /*flex-start - Valor por omisión*/
+        justify-content: flex-start;
+
+        /*flex-start - al final del eje*/
+        justify-content: flex-end;
+
+        /*flex-center - ajusta ala centro*/
+        justify-content: center;
+
+        /*space-between - Los pega a los ejes*/
+        justify-content: space-between;
+
+        /*space-around - Son colocados proporcionalmente*/
+        justify-content: space-around;
+    }
+    .item{
+        background: orange;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+</style>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+</body>
+</html>
