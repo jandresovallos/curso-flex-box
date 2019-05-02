@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #contenedor{
+        display: flex;
+        display: -webkit-flex;
+        width: 300px;
+        height: 250px;
+        background: gray;
+    }
+    .item{
+        background: orange;
+        /*width: 100px;*/
+        height: 100px;
+        margin: 10px;
+        -webkit-flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        -webkit-flex-basic: 100px;
+        flex-grow: 1;
+        flex-shrink: 1; /*ES PARA CUANDO SE VAN A COMENZAR A REDUCIR*/
+        flex-basis: 100px;
+    }
+    .item1{
+        -webkit-flex-shrink: 3;
+        flex-shrink: 3;
+    }
+</style>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex12</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item">item1</div>
+        <div class="item item1">item2</div>
+        <div class="item item1">item3</div>
+    </div>
+</body>
+</html>

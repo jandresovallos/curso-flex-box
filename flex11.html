@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #contenedor{
+        display: flex;
+        display: -webkit-flex;
+        width: 400px;
+        height: 250px;
+        background: gray;
+    }
+    .item{
+        background: orange;
+        /*width: 100px;*/       /*CUANDO USAMOS FLEX-GROW DEBEMOS OMITIR EL WIDTH DE LOS ITEMS*/
+        height: 100px;
+        margin: 10px;
+    }
+    .item1{
+        flex-grow: 3;
+    }
+    .item2{
+        flex-grow: 1;
+    }
+    .item3{
+        flex-grow: 1;
+    }
+</style>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex11</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+</body>
+</html>

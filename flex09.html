@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    #contenedor{
+        display: flex;
+        display: -webkit-flex;
+        width: 380px;
+        height: 250px;
+        background: gray;
+        flex-flow: row wrap;
+        
+    }
+    .item{
+        background: orange;
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+    }
+    .item:first-child{
+        margin: auto;
+    }
+    .rojo{
+        background: red;
+        order: 3;
+    }
+    .blanco{
+        background: white;
+        order: 2;
+    }
+    .verde{
+        background: green;
+        order: 1;
+    }
+
+</style>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <div id="contenedor">
+        <div class="item rojo">item1</div>
+        <div class="item blanco">item2</div>
+        <div class="item verde">item3</div>
+    </div>
+</body>
+</html>
